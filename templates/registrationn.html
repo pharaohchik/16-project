@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> registration_page </title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/registration.css') }}" rel="stylesheet"/>
+</head>
+<body>
+<form action="/reg" method="POST">
+    <h1>регистрация:</h1>
+    <div>
+
+        <label for="surname">фамилия:</label>
+        <input type="text" id="surname" name="surname" placeholder="...">
+    </div>
+    <div>
+        <label for="name">имя:</label>
+        <input type="text" id="name" name="name" placeholder="...">
+    </div>
+    <div>
+        <label for="name_p">отчество:</label>
+        <input type="text" id="name_p" name="name_p" placeholder="...">
+    </div>
+    <div>
+        <label for="phone">номер телефона:</label>
+        <input type="text" id="phone" name="phone" placeholder="...">
+    </div>
+    <div>
+        <label for="email">почта:</label>
+        <input type="text" id="email" name="email" placeholder="...">
+    </div>
+    <div>
+        <label for="arrival">дата заезда:</label>
+        <input type="text" id="arrival" name="arrival" placeholder="...">
+    </div>
+    <div>
+        <label for="leaving">дата выезда:</label>
+        <input type="text" id="leaving" name="leaving" placeholder="...">
+    </div>
+    <div class="button"><input type="submit" value="забронировать"></div>
+</form>
+</body>
+</html>

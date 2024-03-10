@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> verification_page </title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/verification.css') }}" rel="stylesheet"/>
+</head>
+<body>
+<form action="/check" method="POST">
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname" placeholder="фамилия...">
+    <label for="phone">Номер телефона:</label>
+    <input type="text" id="phone" name="phone" placeholder="телефон...">
+
+    <input type="submit" value="проверка">
+</form>
+</body>
+</html>
